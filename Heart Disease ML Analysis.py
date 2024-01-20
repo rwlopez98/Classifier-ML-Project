@@ -1,5 +1,8 @@
 ###Heart Disease ML Classification Project
 
+#Author: Ray Lopez
+#Last Updated: 1/20/24
+
 #Importing Libraries
 import pandas as pd
 import matplotlib.pyplot as plt
