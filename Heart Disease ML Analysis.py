@@ -1,8 +1,10 @@
-###Heart Disease ML Classification Project
+"""
+Heart Disease ML Classification Project
 
-#Author: Ray Lopez
-#Last Updated: 1/20/24
+Author: Ray Lopez
+Last Updated: 2/12/24
 
+"""
 #Importing Libraries
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -25,6 +27,7 @@ def plot_roc_curve(fpr, tpr, name):
     plt.title(name + " ROC Curve")
     plt.legend()
     plt.show()
+    plt.clf()
 
 #Defining function to plot our Confusion Matrix
 def plot_conf_matrix(conf_mat, name):
@@ -33,6 +36,8 @@ def plot_conf_matrix(conf_mat, name):
     fig.set_dpi(300)
     ax = sns.heatmap(conf_mat, annot=True, fmt=str())
     plt.title(name + " Confusion Matrix")
+    plt.show()
+    plt.clf()
 
 #Importing Data Set
 df = pd.read_csv('heart_statlog_cleveland_hungary_final.csv')
